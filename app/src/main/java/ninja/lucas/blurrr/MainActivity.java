@@ -5,6 +5,15 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.animation.Animator;
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.animation.ValueAnimator;
+import android.support.v7.app.*;
+import android.view.View;
+import android.view.animation.OvershootInterpolator;
+import android.widget.ImageView;
+
 public class MainActivity extends Activity {
 
     @Override
