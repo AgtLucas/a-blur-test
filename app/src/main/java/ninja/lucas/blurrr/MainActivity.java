@@ -14,6 +14,10 @@ import android.view.View;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 
+import com.fivehundredpx.android.blur.BlurringView;
+
+import java.util.Random;
+
 public class MainActivity extends Activity {
 
     @Override
