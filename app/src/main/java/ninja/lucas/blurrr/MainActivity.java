@@ -60,6 +60,8 @@ public class MainActivity extends ActionBarActivity {
     private ImageView[] mImageViews = new ImageView[9];
     private int mStartIndex;
 
+    private Random mRandom = new Random();
+
     private ValueAnimator.AnimatorUpdateListener listener = new ValueAnimator.AnimatorUpdateListener() {
         @Override
         public void onAnimationUpdate(ValueAnimator animation) {
