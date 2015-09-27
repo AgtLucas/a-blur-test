@@ -43,7 +43,12 @@ public class MainActivity extends ActionBarActivity {
             newStartIndex = mImageIds[mRandom.nextInt(mImageIds.length)];
         } while (newStartIndex == mStartIndex);
 
-        
+        for (int i = 0; i < mImageViews.length; i++) {
+            int drawableId = mImageIds[(mStartIndex + i) % mImageIds.length];
+            mImageViews[i].setImageDrawable(getResources().getDrawable(drawableId));
+        }
+
+        mBlurringView.invalidate();
     }
 
     private BlurringView mBlurringView;
