@@ -36,6 +36,16 @@ public class MainActivity extends ActionBarActivity {
         mImageViews[9] = (ImageView) findViewById(R.id.image8);
     }
 
+    public void shuffle(View view) {
+        int newStartIndex;
+
+        do {
+            newStartIndex = mImageIds[mRandom.nextInt(mImageIds.length)];
+        } while (newStartIndex == mStartIndex);
+
+        
+    }
+
     private BlurringView mBlurringView;
 
     private int[] mImageIds = {
