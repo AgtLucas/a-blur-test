@@ -36,20 +36,20 @@ public class MainActivity extends ActionBarActivity {
         mImageViews[9] = (ImageView) findViewById(R.id.image8);
     }
 
-    public void shuffle(View view) {
-        int newStartIndex;
-
-        do {
-            newStartIndex = mImageIds[mRandom.nextInt(mImageIds.length)];
-        } while (newStartIndex == mStartIndex);
-
-        for (int i = 0; i < mImageViews.length; i++) {
-            int drawableId = mImageIds[(mStartIndex + i) % mImageIds.length];
-            mImageViews[i].setImageDrawable(getResources().getDrawable(drawableId));
-        }
-
-        mBlurringView.invalidate();
-    }
+//    public void shuffle(View view) {
+//        int newStartIndex;
+//
+//        do {
+//            newStartIndex = mImageIds[mRandom.nextInt(mImageIds.length)];
+//        } while (newStartIndex == mStartIndex);
+//
+//        for (int i = 0; i < mImageViews.length; i++) {
+//            int drawableId = mImageIds[(mStartIndex + i) % mImageIds.length];
+//            mImageViews[i].setImageDrawable(getResources().getDrawable(drawableId));
+//        }
+//
+//        mBlurringView.invalidate();
+//    }
 
     private BlurringView mBlurringView;
 
